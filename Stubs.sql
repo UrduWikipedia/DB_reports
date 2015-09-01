@@ -1,6 +1,7 @@
 SELECT CONCAT('[[',p.page_title,']]') as نام_مضمون,
 CONCAT('[[User:',r.rev_user_text,'|',r.rev_user_text,']]') as صارف_نام,
-p.page_len as Size from revision r, page p 
+p.page_len as حجم 
+FROM revision r, page p 
 WHERE r.rev_parent_id = 0 
 AND r.rev_len < 2048 
 AND p.page_len < 2048 
