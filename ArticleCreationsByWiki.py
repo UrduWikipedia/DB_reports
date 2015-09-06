@@ -16,7 +16,7 @@ def numbertopersian(a):
 	a = a.replace(u'7', u'7')
 	a = a.replace(u'8', u'8')
 	a = a.replace(u'9', u'9')
-	a = a.replace(u'.', u'٫')
+	a = a.replace(u'0', u'0')
 	return a
 
 savetext = u"{{#switch:{{{1|ur}}}"
